@@ -2359,3 +2359,8 @@ figure.icon {
 .client_image{
     border-radius: 13px;
 }
+
+.clients img{
+    width: 100px;
+    min-height: 50px;
+}
