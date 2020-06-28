@@ -1308,13 +1308,13 @@ hr {
 
 .ts-inputs__transparent input, .ts-inputs__transparent textarea {
     background-color: transparent;
-    color: #fff;
+    /* color: #fff; */
 }
 
 .ts-inputs__transparent input:active, .ts-inputs__transparent input:focus,
 .ts-inputs__transparent textarea:active, .ts-inputs__transparent textarea:focus {
     background-color: transparent;
-    color: #fff;
+    /* color: #fff; */
 }
 
 .ts-item {
