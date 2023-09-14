@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44.581" viewBox="0 0 44 44.581">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_9211" data-name="Path 9211" d="M0-682.665H19.784v19.784H0Z" transform="translate(0 682.665)" fill="#94cb1d"/>
+    </clipPath>
+  </defs>
+  <g id="Icon_" data-name="Icon " transform="translate(0.5 0.5)">
+    <rect id="bg" width="43" height="43.581" rx="6" fill="none" stroke="#94cb1d" stroke-width="1"/>
+    <g id="svgexport-17_78_" data-name="svgexport-17 (78)" transform="translate(11.608 11.899)">
+      <g id="Group_16050" data-name="Group 16050" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <path id="Path_9209" data-name="Path 9209" d="M-213.624-624.041c-2.318-3.478-6.376-8.192-6.376-12.249a6.383,6.383,0,0,1,6.376-6.376,6.383,6.383,0,0,1,6.376,6.376C-207.248-632.232-211.305-627.518-213.624-624.041Z" transform="translate(223.516 643.245)" fill="none" stroke="#94cb1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path id="Path_9210" data-name="Path 9210" d="M-97.1-194.2a2.9,2.9,0,0,1-2.9-2.9,2.9,2.9,0,0,1,2.9-2.9,2.9,2.9,0,0,1,2.9,2.9A2.9,2.9,0,0,1-97.1-194.2Z" transform="translate(106.994 204.057)" fill="none" stroke="#94cb1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

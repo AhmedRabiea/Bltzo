@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <g id="Icon_" data-name="Icon " transform="translate(0.5 0.5)">
+    <rect id="bg" width="43" height="43" rx="6" fill="none" stroke="#94cb1d" stroke-width="1"/>
+    <g id="svgexport-17_77_" data-name="svgexport-17 (77)" transform="translate(10.289 15.609)">
+      <path id="Path_9208" data-name="Path 9208" d="M19.729,85.333H1.066A1.07,1.07,0,0,0,0,86.4V98.13A1.07,1.07,0,0,0,1.066,99.2H19.729A1.07,1.07,0,0,0,20.8,98.13V86.4a1.07,1.07,0,0,0-1.067-1.066Zm-.4.8-8.318,6.239a1.115,1.115,0,0,1-1.227,0L1.467,86.133Zm-4.443,6.65,4.532,5.6c0,.006.01.01.015.015H1.362c0-.005.01-.009.015-.015l4.532-5.6a.4.4,0,0,0-.622-.5L.8,97.824V86.633l8.5,6.379a1.909,1.909,0,0,0,2.186,0L20,86.633V97.824L15.508,92.28a.4.4,0,0,0-.622.5Z" transform="translate(0 -85.333)" fill="#94cb1d"/>
+    </g>
+  </g>
+</svg>

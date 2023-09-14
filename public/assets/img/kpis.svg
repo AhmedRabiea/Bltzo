@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="71.289" height="71.289" viewBox="0 0 71.289 71.289">
+  <g id="Group_16185" data-name="Group 16185" transform="translate(-98.022)">
+    <g id="Icon-1" transform="translate(98.022)">
+      <circle id="bg" cx="35.644" cy="35.644" r="35.644" fill="#94cb1d"/>
+    </g>
+    <g id="svgexport-17_79_" data-name="svgexport-17 (79)" transform="translate(119.662 21.64)">
+      <path id="Path_9212" data-name="Path 9212" d="M14,28.009A14,14,0,1,0,0,14,14.022,14.022,0,0,0,14,28.009ZM14,1.867A12.137,12.137,0,1,1,1.867,14,12.149,12.149,0,0,1,14,1.867Z" fill="#fff"/>
+      <path id="Path_9213" data-name="Path 9213" d="M172.685,84.724A.932.932,0,0,0,174,84.579a.934.934,0,0,0-.145-1.312l-4.318-3.454V72.792a.934.934,0,1,0-1.867,0v7.469a.937.937,0,0,0,.35.728Z" transform="translate(-154.596 -66.256)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
