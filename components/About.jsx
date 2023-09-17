@@ -9,8 +9,8 @@ const About = () => {
     { number: "2500", desc: "Project" },
   ];
   return (
-    <section className="flex justify-between gap-36 mt-40">
-      <div className="flex flex-col gap-5 basis-1/2">
+    <section className="flex flex-col-reverse md:flex-row md:justify-between gap-10 md:gap-36 md:mt-40 mt-24">
+      <div className="flex flex-col gap-5 basis-1/2 px-5 md:px-0">
         <h3 className="text-left text-xl text-headers">ABOUT BLTZO</h3>
         <h1 className="text-3xl font-bold text-txtcolor">
           Inception Design <span className="text-headers">System</span>
@@ -37,11 +37,11 @@ const About = () => {
           <div className="absolute -top-2 -left-2 w-9 h-8 bg-navbtn rounded-tl-xl"></div>
           <div className="absolute -bottom-2 -right-2 w-9 h-8 bg-headers rounded-br-xl"></div>
         </ul>
-        <div className="w-1/2 mt-14">
+        <div className="w-full md:w-1/2 mt-14 flex items-center md:items-start justify-center md:justify-start">
           <KnowMoreBtn>Know More</KnowMoreBtn>
         </div>
       </div>
-      <div className="basis-1/2">
+      <div className="basis-1/2 px-5 md:px-0">
         <img src="../assets/img/AboutSection.png" alt="about-bltzo" />
       </div>
     </section>

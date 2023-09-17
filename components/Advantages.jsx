@@ -3,7 +3,7 @@ import KnowMoreBtn from "./KnowMoreBtn";
 
 const Advantages = () => {
   return (
-    <section className="flex items-center justify-between mt-20 w-full gap-28">
+    <section className="flex flex-col md:flex-row items-center justify-between mt-24 w-full md:gap-28 gap-10 px-5 md:px-0">
       <div className="basis-1/2">
         <div className="bg-slate-200 h-full z-20"></div>
         <img
@@ -33,7 +33,7 @@ const Advantages = () => {
           <br />
           while minimizing the time it takes to bring them to market.
         </p>
-        <div className="w-1/2 mt-10">
+        <div className="w-full md:w-1/2 mt-10 flex items-center md:items-start justify-center md:justify-start">
           <KnowMoreBtn>Know More</KnowMoreBtn>
         </div>
       </div>

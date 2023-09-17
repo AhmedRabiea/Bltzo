@@ -18,9 +18,9 @@ const Footer = () => {
   const pathName = usePathname();
   return (
     <div className="flex flex-col mt-14">
-      <div className="flex justify-between items-center border-b-2 border-slate-100 px-3 py-5">
+      <div className="flex flex-col md:flex-row md:justify-between md:items-center border-b-2 border-slate-100 pb-5 px-5 md:px-0">
         <img src="../assets/img/logo.svg" alt="bltzo-logo" />
-        <ul className="md:flex md:items-center pb-12 md:pb-0 bg-white md:z-auto w-full md:w-auto pl-9 md:pl-0">
+        <ul className="flex flex-col md:flex-row items-center bg-white w-full md:w-auto mb-5 md:mb-0">
           {navList.map((item, idx) => {
             const isActive = pathName === item.href;
             return (
@@ -28,7 +28,7 @@ const Footer = () => {
                 <Link
                   href={item.href}
                   className={clsx(
-                    "text-[#1B192A] text-lg font-normal px-4",
+                    "text-[#1B192A] text-sm md:text-lg font-normal px-4",
                     isActive ? "text-navactive " : ""
                   )}
                 >
@@ -38,7 +38,9 @@ const Footer = () => {
             );
           })}
         </ul>
-        <SocialLinks />
+        <div className="flex items-center justify-center">
+          <SocialLinks />
+        </div>
       </div>
       <div className="text-[#766C97] font-normal text-sm text-center py-4">
         <p>Bltzo© All rights reserved Copyrights 2023</p>

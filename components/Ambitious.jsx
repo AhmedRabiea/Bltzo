@@ -2,8 +2,8 @@ import React from "react";
 
 const Ambitious = () => {
   return (
-    <div className="flex flex-col bg-bgservices mt-28 items-center justify-center text-center py-32 rounded-lg gap-10">
-      <h1 className="text-6xl font-bold">
+    <div className="flex flex-col bg-bgservices items-center justify-center text-center px-5 md:px-0 md:py-32 py-16 rounded-lg gap-10 mt-24">
+      <h1 className="text-2xl md:text-6xl font-bold">
         Created For Ambitious <br />
         Businesses
       </h1>

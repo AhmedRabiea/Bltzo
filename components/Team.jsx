@@ -26,8 +26,8 @@ const Team = () => {
     },
   ];
   return (
-    <section className="h-screen flex flex-col gap-10 mt-40">
-      <div className="flex flex-col gap-3">
+    <section className="flex flex-col gap-10 md:mt-40 mt-24 px-5 md:px-0">
+      <div className="flex flex-col gap-3 items-center md:items-start justify-center md:justify-start text-center md:text-start">
         <h3 className="text-lg text-headers font-normal">MEET OUR TEAM</h3>
         <h1 className="text-3xl text-txtcolor font-bold">
           Community <span className="text-headers">Support & Moderation</span>
@@ -37,7 +37,7 @@ const Team = () => {
           The dangerous world of a man who to have a neighbor just like end.
         </p>
       </div>
-      <div className="flex gap-10 mt-36 items-center justify-center">
+      <div className="flex flex-col md:flex-row gap-10 md:mt-36 mt-5 items-center justify-center">
         <div className="bg-slate-300 relative w-10 h-10 rounded-full text-3xl items-center justify-center flex">
           <GoArrowLeft className="absolute left-4" />
         </div>

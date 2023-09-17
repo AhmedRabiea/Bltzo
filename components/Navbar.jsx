@@ -24,7 +24,7 @@ const Navbar = () => {
 
   const [open, setOpen] = useState(false);
   return (
-    <div className="shadow-xl shadow-navshadow w-full fixed left-0 top-0 ">
+    <div className="shadow-xl shadow-navshadow w-full left-0 top-0 ">
       <div className="flex items-center justify-between py-4 gap-6 bg-white px-7 md:px-10">
         <div className="logo">
           <img src="/assets/img/logo.svg" alt="bltzo logo" />
@@ -48,7 +48,7 @@ const Navbar = () => {
                 <Link
                   href={item.href}
                   className={clsx(
-                    "text-navtext ml-8 my-7 md:my-0 text-2xl font-normal pb-6",
+                    "text-navtext ml-8 my-7 md:my-0 text-lg font-normal pb-6",
                     isActive ? "text-navactive border-b-2 border-navactive" : ""
                   )}
                 >

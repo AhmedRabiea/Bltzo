@@ -35,7 +35,7 @@ const Services = () => {
     },
   ];
   return (
-    <div className="flex flex-col gap-28 py-28 px-60  text-center mt-40 bg-bgservices rounded-3xl">
+    <div className="flex flex-col md:gap-28 gap-10 md:py-28 py-5 md:px-60 px-5 text-center md:mt-40 mt-24 bg-bgservices rounded-3xl">
       <div className="flex flex-col gap-3 items-center justify-center">
         <h3 className="text-lg text-headers font-normal uppercase">Services</h3>
         <h1 className="text-3xl font-bold text-txtcolor">
@@ -46,7 +46,7 @@ const Services = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid md:grid-cols-3 gap-10">
         {services.map((service) => (
           <li className="list-none flex flex-col gap-3 justify-center items-center">
             <img src={service.icon} alt="bltzo-icon" />

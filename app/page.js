@@ -10,7 +10,7 @@ import Team from "@/components/Team";
 
 export default function Home() {
   return (
-    <main className="min-h-screen p-24">
+    <main className=" md:p-24">
       <Slider />
       <Clients />
       <About />

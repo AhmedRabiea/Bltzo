@@ -15,8 +15,8 @@ const Contact = () => {
     },
   ];
   return (
-    <div className="grid grid-flow-row mt-20 bg-bgservices rounded-lg py-32 px-32 bg-gradient-to-l from-[#0B4A63] from-10% via-[#F9F8FF] via-30% to-[#F9F8FF] to-90%">
-      <div className="grid grid-cols-2 items-center justify-center gap-40">
+    <div className="grid grid-flow-row mt-20 rounded-lg md:py-32 py-16 px-5 md:px-32 bg-gradient-to-t md:bg-gradient-to-l from-[#0B4A63] from-30% via-[#F9F8FF] via-10% to-[#F9F8FF] to-90%">
+      <div className="grid md:grid-cols-2 items-center justify-center md:gap-40 gap-20">
         <div className="flex flex-col gap-3">
           <h1 className="text-4xl font-bold">Contact Us</h1>
           <p className="text-txtparagraph">
@@ -24,7 +24,7 @@ const Contact = () => {
             <br /> Elit pellentesque habitant morbi
           </p>
           <div className="w-full mt-6 flex flex-col gap-4">
-            <div className="w-full flex gap-4">
+            <div className="w-full flex flex-col md:flex-row gap-4">
               <div className="flex flex-col gap-2 basis-1/2">
                 <label htmlFor="fullname" className="block text-lg font-medium">
                   Full Name
@@ -61,7 +61,7 @@ const Contact = () => {
                 placeholder="Describe what you need here.."
               ></textarea>
             </div>
-            <div className="w-1/2">
+            <div className="w-full md:w-1/2">
               <KnowMoreBtn>Send A Message</KnowMoreBtn>
             </div>
           </div>

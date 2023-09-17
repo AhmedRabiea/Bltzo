@@ -15,21 +15,21 @@ const Clients = () => {
     { src: "../assets/img/lexmark.svg", alt: "lexmark" },
   ];
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col mt-20 md:mt-0">
       <div className="flex flex-col items-center gap-2 text-txtcolor">
         <h2 className="text-2xl text-headers font-normal">CLIENTS</h2>
         <h1 className="text-3xl font-bold font-[Poppins]">
           <span className="text-headers">Trusted</span> Clients
         </h1>
-        <p className="text-txtparagraph">
+        <p className="text-txtparagraph text-center md:text-start">
           The dangerous world of a man who to have a neighbor just like end.
         </p>
       </div>
       <div className="flex flex-row text-4xl text-center items-center justify-center mt-11">
-        <div className="bg-slate-300 relative w-10 h-10 rounded-3xl">
+        <div className="bg-slate-300 relative w-10 h-10 rounded-full">
           <GoArrowLeft className="absolute left-4" />
         </div>
-        <ul className="flex justify-center flex-nowrap items-stretch gap-5 w-full">
+        <ul className="flex justify-center flex-wrap items-stretch gap-5 w-full">
           {clients.map((client, idx) => (
             <ClientsCards
               key={idx}
