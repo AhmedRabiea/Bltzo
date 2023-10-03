@@ -25,19 +25,19 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="shadow-xl shadow-navshadow w-full left-0 top-0 ">
-      <div className="flex items-center justify-between py-4 gap-6 bg-white px-7 md:px-10">
+      <div className="flex items-center justify-between py-4 gap-6 bg-white px-7 lg:px-10">
         <div className="logo">
           <img src="/assets/img/logo.svg" alt="bltzo logo" />
         </div>
         <div
           onClick={() => setOpen(!open)}
-          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+          className="text-3xl absolute right-8 top-6 cursor-pointer lg:hidden"
         >
           {open ? <GrClose /> : <FiMenu />}
         </div>
         <ul
           className={clsx(
-            "md:flex md:items-center pb-12 md:pb-0 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto pl-9 md:pl-0 transition-all duration-500 ease-in",
+            "lg:flex lg:items-center pb-12 lg:pb-0 absolute lg:static bg-white lg:z-auto z-[-1] left-0 w-full lg:w-auto pl-9 lg:pl-0 transition-all duration-500 ease-in",
             open ? "top-16" : "top-[-490px]"
           )}
         >
@@ -48,7 +48,7 @@ const Navbar = () => {
                 <Link
                   href={item.href}
                   className={clsx(
-                    "text-navtext ml-8 my-7 md:my-0 text-lg font-normal pb-6",
+                    "text-navtext ml-8 my-7 lg:my-0 text-lg font-normal pb-6",
                     isActive ? "text-navactive border-b-2 border-navactive" : ""
                   )}
                 >

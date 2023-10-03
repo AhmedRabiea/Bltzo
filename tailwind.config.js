@@ -5,6 +5,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./about_components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./shared_components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./services_components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./web_services/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -19,6 +22,9 @@ module.exports = {
         itemsborder: "#D0C1FB",
         bgservices: "#A8B7BC21",
         contactform: "#A8B7BC",
+        servicesp: "#43555C",
+        cardsborder: "#E9E9E9",
+        sectionbg: "#F9F8FF",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
