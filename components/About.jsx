@@ -6,9 +6,9 @@ const About = () => {
   return (
     <section className="flex flex-col-reverse md:flex-row md:justify-between gap-10 md:gap-36 md:mt-40 mt-24">
       <div className="flex flex-col gap-5 basis-1/2 px-5 md:px-0">
-        <h3 className="text-left text-xl text-headers">ABOUT BLTZO</h3>
+        <h3 className="text-left text-xl text-green">ABOUT BLTZO</h3>
         <h1 className="text-3xl font-bold text-txtcolor">
-          Inception Design <span className="text-headers">System</span>
+          Inception Design <span className="text-green">System</span>
         </h1>
         <p className="text-xl text-txtparagraph">
           Lorem Ipsum is simply dummy text of the printing and typesetting

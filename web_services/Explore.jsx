@@ -28,7 +28,7 @@ const Explore = () => {
     <div className="container mx-auto mt-44">
       <div className="grid grid-cols-2 gap-32">
         <div className="flex flex-col gap-6">
-          <h2 className="text-lg font-normal text-headers uppercase">
+          <h2 className="text-lg font-normal text-green uppercase">
             MOBILE APP DEVELOPMENT SERVICES
           </h2>
           <h1 className="font-bold text-4xl">

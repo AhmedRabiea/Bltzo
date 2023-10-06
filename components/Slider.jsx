@@ -5,16 +5,16 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 
 const Slider = () => {
   return (
-    <div className="w-full h-full">
+    <div className="container  mx-auto">
       <div className="flex flex-col-reverse md:flex-row md:items-center md:justify-between">
         <div className="flex flex-col gap-4 items-center justify-center md:items-start md:justify-start">
-          <h1 className="text-3xl md:text-6xl font-bold font-[Poppins] capitalize">
+          <h1 className="text-3xl md:text-6xl font-bold capitalize">
             ORGANIZE YOUR <br />
             BUSINESS
             <br />
-            <span className="text-headers">WITH BLTZO</span>
+            <span className="text-green">WITH BLTZO</span>
           </h1>
-          <p className="text-lg text-txtparagraph font-normal font-[Poppins] my-3 text-center md:text-start">
+          <p className="text-lg text-txtparagraph font-light my-3 text-center md:text-start">
             Facilisis magna etiam tempor orci eu lobortis elementum nibh tellus.
             Donec ac odio tempor orci dapibus. Pulvinar etiam non quam lacus
             suspendisse faucibus
@@ -32,7 +32,7 @@ const Slider = () => {
             </Link>
           </div>
         </div>
-        <div className="w-full">
+        <div className="">
           <img
             src="../assets/img/slider.png"
             alt="slider-bltzo"

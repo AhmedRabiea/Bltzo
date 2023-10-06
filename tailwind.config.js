@@ -12,24 +12,29 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        navtext: "#1B192A",
-        navactive: "#0B4A63",
-        navbtn: "#0B4A63",
-        navshadow: "#0231491A",
-        txtcolor: "#24373E",
-        headers: "#94CB1D",
-        txtparagraph: "#43555C",
-        itemsborder: "#D0C1FB",
-        bgservices: "#A8B7BC21",
-        contactform: "#A8B7BC",
-        servicesp: "#43555C",
-        cardsborder: "#E9E9E9",
-        sectionbg: "#F9F8FF",
+        bltzo: {
+          100: "#0B4A63",
+          200: "#1B192A",
+          300: "#1B192A",
+          400: "#94CB1D",
+          500: "#43555C",
+          600: "#24373E",
+          700: "#766C97",
+          800: "#0231491A",
+          bgservices: "#A8B7BC21",
+          contactform: "#A8B7BC",
+          servicesp: "#43555C",
+          cardsborder: "#E9E9E9",
+          sectionbg: "#F9F8FF",
+        },
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      fontFamily: {
+        sans: ["Poppins"],
       },
     },
   },

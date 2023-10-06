@@ -24,10 +24,10 @@ const Navbar = () => {
 
   const [open, setOpen] = useState(false);
   return (
-    <div className="shadow-xl shadow-navshadow w-full left-0 top-0 ">
+    <div className="shadow-xl shadow-bltzo-800 w-full left-0 top-0 sticky">
       <div className="flex items-center justify-between py-4 gap-6 bg-white px-7 lg:px-10">
         <div className="logo">
-          <img src="/assets/img/logo.svg" alt="bltzo logo" />
+          <img src="/assets/img/logo.svg" alt="bltzo-logo" />
         </div>
         <div
           onClick={() => setOpen(!open)}
@@ -48,8 +48,10 @@ const Navbar = () => {
                 <Link
                   href={item.href}
                   className={clsx(
-                    "text-navtext ml-8 my-7 lg:my-0 text-lg font-normal pb-6",
-                    isActive ? "text-navactive border-b-2 border-navactive" : ""
+                    "text-bltzo-200 ml-8 my-7 lg:my-0 text-lg font-normal pb-7 ",
+                    isActive
+                      ? "text-bltzo-100 border-b-2 border-bltzo-100 font-semibold"
+                      : ""
                   )}
                 >
                   {item.title}
@@ -58,8 +60,8 @@ const Navbar = () => {
             );
           })}
         </ul>
-        <div className="flex items-center justify-between gap-4 text-navtext">
-          <span className="text-2xl font-bold">
+        <div className="flex items-center justify-between gap-4 text-bltzo-100 font-semibold">
+          <span className="text-2xl">
             <FiSearch />
           </span>
           <Navbtn>Get In Touch</Navbtn>

@@ -10,7 +10,7 @@ import Team from "@/components/Team";
 
 export default function Home() {
   return (
-    <main className=" md:p-24">
+    <main className="container mx-auto">
       <Slider />
       <Clients />
       <About />
