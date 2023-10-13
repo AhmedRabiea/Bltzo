@@ -1,19 +1,21 @@
-import TechnologiesCards from "@/shared_components/TechnologiesCards";
+import TechnologiesCards from "@/pages/shared/TechnologiesCards";
 import React from "react";
 
 const Technologies = () => {
   return (
-    <div className="container mx-auto mt-20">
-      <div className="grid gap-10">
-        <div className="flex flex-col items-center justify-center gap-5 text-center">
-          <h2 className="text-lg text-headers font-normal uppercase">
-            WEB DEVELOPMENT TECHNOLOGIES
-          </h2>
-          <h1 className="text-4xl font-bold">
-            Our scope of <span className="text-headers">web development</span>{" "}
-            services
-          </h1>
-          <p className="font-normal text-txtparagraph">
+    <div className="container mx-auto mt-48">
+      <div className="grid gap-3">
+        <div className="flex flex-col items-center justify-center gap-3 text-center">
+          <div className="flex flex-col gap-1">
+            <h2 className="text-sm text-bltzo-400 font-normal uppercase">
+              WEB DEVELOPMENT TECHNOLOGIES
+            </h2>
+            <h1 className="text-3xl font-bold">
+              Our scope of{" "}
+              <span className="text-bltzo-400">web development</span> services
+            </h1>
+          </div>
+          <p className="font-normal text-bltzo-500 text-sm">
             Mobile apps leverage a variety of technologies for their
             development. Front-end technologies like HTML5, CSS, and JavaScript{" "}
             <br />

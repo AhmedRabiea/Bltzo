@@ -2,28 +2,21 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
-
 import { usePathname } from "next/navigation";
-
 import { FiSearch, FiMenu } from "react-icons/fi";
+import {
+  MdOutlineKeyboardArrowDown,
+  MdOutlineKeyboardArrowUp,
+} from "react-icons/md";
 import { GrClose } from "react-icons/gr";
 import Navbtn from "./Navbtn";
-import { NavDropdown } from "./NavDropdown";
 import { clsx } from "clsx";
 
 const Navbar = () => {
-  const navList = [
-    { title: "Home", href: "/" },
-    { title: "About", href: "/about" },
-    { title: "Estimate Your Project", href: "/estimate" },
-    { title: "Services", href: "/services" },
-    { title: "Blog", href: "/blog" },
-    { title: "Contact", href: "/contact" },
-  ];
-
   const pathName = usePathname();
 
   const [open, setOpen] = useState(false);
+  const [isDown, setIsDown] = useState(false);
   return (
     <div className="shadow-xl z-50 shadow-bltzo-800 w-full left-0 top-0 sticky">
       <div className="flex items-center justify-between py-4 gap-6 bg-white px-7 lg:px-10">
@@ -42,25 +35,71 @@ const Navbar = () => {
             open ? "top-16" : "top-[-490px]"
           )}
         >
-          {navList.map((item, idx) => {
-            const isActive = pathName === item.href;
-            return (
-              <li key={idx}>
-                <Link
-                  href={item.href}
-                  className={clsx(
-                    "text-bltzo-200 ml-8 my-7 lg:my-0 text-lg font-normal pb-7 ",
-                    isActive
-                      ? "text-bltzo-100 border-b-2 border-bltzo-100 font-semibold"
-                      : ""
-                  )}
-                >
-                  {item.title}
-                </Link>
-              </li>
-            );
-          })}
+          <li>
+            <Link href="/" className="ml-10 text-bltzo-300 text-sm font-normal">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/about"
+              className="ml-10 text-bltzo-300 text-sm font-normal"
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/estimate"
+              className="ml-10 text-bltzo-300 text-sm font-normal"
+            >
+              Estimate Your Project
+            </Link>
+          </li>
+          <li className="relative">
+            <Link
+              href="/services"
+              className="ml-10 text-bltzo-300 text-sm font-normal flex items-center gap-3"
+              onClick={() => setIsDown(!isDown)}
+            >
+              Services
+              <span>
+                {!isDown ? (
+                  <MdOutlineKeyboardArrowDown />
+                ) : (
+                  <MdOutlineKeyboardArrowUp />
+                )}
+              </span>
+            </Link>
+            {isDown && (
+              <div className="absolute bg-white flex flex-col rounded-lg items-start top-14 p-2 w-60 flex-wrap">
+                <li className="px-3 py-2 w-full hover:bg-bltzo-150 cursor-pointer rounded-md">
+                  <Link href="/services/web-services">Web Development</Link>
+                </li>
+                <li className="px-3 py-2 w-full hover:bg-bltzo-150 cursor-pointer rounded-md">
+                  <Link href="/services/product-design-services">
+                    Product Design
+                  </Link>
+                </li>
+                <li className="px-3 py-2 w-full hover:bg-bltzo-150 cursor-pointer rounded-md">
+                  <Link href="/services/quality-services">
+                    Quality Assurance
+                  </Link>
+                </li>
+              </div>
+            )}
+          </li>
+
+          <li>
+            <Link
+              href="/contact"
+              className="ml-10 text-bltzo-300 text-sm font-normal"
+            >
+              Contact
+            </Link>
+          </li>
         </ul>
+
         <div className="flex items-center justify-between gap-4 text-bltzo-100 font-semibold">
           <span className="text-2xl">
             <FiSearch />
