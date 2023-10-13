@@ -1,15 +1,15 @@
-import Ambitious from "@/components/Ambitious";
-import Footer from "@/components/Footer";
-import Mobile from "@/services_components/Mobile";
-import MobileDevServices from "@/services_components/MobileDevServices";
-import Slider from "@/services_components/Slider";
-import Technologies from "@/services_components/Technologies";
-import Unleash from "@/services_components/Unleash";
+import Ambitious from "@/pages/home/Ambitious";
+import Footer from "@/pages/home/Footer";
+import Mobile from "@/pages/services/main/Mobile";
+import MobileDevServices from "@/pages/services/main/MobileDevServices";
+import Slider from "@/pages/services/main/Slider";
+import Technologies from "@/pages/services/main/Technologies";
+import Unleash from "@/pages/services/main/Unleash";
 import React from "react";
 
 const Page = () => {
   return (
-    <div className="p-24">
+    <div className="container mx-auto">
       <Slider />
       <Mobile />
       <Technologies />

@@ -1,12 +1,12 @@
-import About from "@/components/About";
-import Advantages from "@/components/Advantages";
-import Ambitious from "@/components/Ambitious";
-import Clients from "@/components/Clients";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import Services from "@/components/Services";
-import Slider from "@/components/Slider";
-import Team from "@/components/Team";
+import About from "@/pages/home/About";
+import Advantages from "@/pages/home/Advantages";
+import Ambitious from "@/pages/home/Ambitious";
+import Clients from "@/pages/home/Clients";
+import Contact from "@/pages/home/Contact";
+import Footer from "@/pages/home/Footer";
+import Services from "@/pages/home/Services";
+import Slider from "@/pages/home/Slider";
+import Team from "@/pages/home/Team";
 
 export default function Home() {
   return (
