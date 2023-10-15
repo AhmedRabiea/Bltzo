@@ -25,31 +25,35 @@ const Explore = () => {
     },
   ];
   return (
-    <div className="container mx-auto mt-44">
+    <div className="container mx-auto mt-40">
       <div className="grid grid-cols-2 gap-32">
-        <div className="flex flex-col gap-6">
-          <h2 className="text-lg font-normal text-green uppercase">
-            MOBILE APP DEVELOPMENT SERVICES
-          </h2>
-          <h1 className="font-bold text-4xl">
-            Exploring{" "}
-            <span className="text-headers">
-              Web <br /> Development
-            </span>{" "}
-            Services.
-          </h1>
-          <p className="font-normal text-txtparagraph">
-            Our battle-tested developers specialize in a wide range of web
-            development services. Here are some of the solutions that we can
-            deliver for you.
-          </p>
+        <div className="flex flex-col gap-12">
+          <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-2">
+              <h2 className="text-sm font-normal text-bltzo-400 uppercase">
+                MOBILE APP DEVELOPMENT SERVICES
+              </h2>
+              <h1 className="font-bold text-3xl">
+                Exploring{" "}
+                <span className="text-bltzo-400">
+                  Web <br /> Development
+                </span>{" "}
+                Services.
+              </h1>
+            </div>
+            <p className="font-normal text-bltzo-500 text-sm">
+              Our battle-tested developers specialize in a wide range of web
+              development services. Here are some of the solutions that we can
+              deliver for you.
+            </p>
+          </div>
           <div className="flex flex-col gap-10 list-none pt-10">
             {services.slice(0, 3).map((service, idx) => (
               <div className="flex gap-3">
-                <span className="text-2xl text-navbtn">{service.icon}</span>
-                <div className="flex flex-col gap-2">
-                  <h1 className="text-xl font-bold">{service.title}</h1>
-                  <p className="font-normal text-txtparagraph">
+                <span className="text-2xl text-bltzo-100">{service.icon}</span>
+                <div className="flex flex-col gap-3">
+                  <h1 className="text-base font-bold">{service.title}</h1>
+                  <p className="font-normal text-bltzo-500 text-sm">
                     {service.desc}
                   </p>
                 </div>
@@ -71,10 +75,12 @@ const Explore = () => {
           </div>
           {services.slice(3).map((service, idx) => (
             <div className="flex gap-3">
-              <span className="text-2xl text-navbtn">{service.icon}</span>
-              <div className="flex flex-col gap-2">
-                <h1 className="text-xl font-bold">{service.title}</h1>
-                <p className="font-normal text-txtparagraph">{service.desc}</p>
+              <span className="text-2xl text-bltzo-100">{service.icon}</span>
+              <div className="flex flex-col gap-3">
+                <h1 className="text-base font-bold">{service.title}</h1>
+                <p className="font-normal text-bltzo-500 text-sm">
+                  {service.desc}
+                </p>
               </div>
             </div>
           ))}

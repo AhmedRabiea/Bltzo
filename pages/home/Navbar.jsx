@@ -59,7 +59,8 @@ const Navbar = () => {
           <li className="relative">
             <Link
               href="/services"
-              className="ml-10 text-bltzo-300 text-sm font-normal flex items-center gap-3"
+              className="ml-10 text-bltzo-300 text-sm font-normal items-center gap-3 inline-flex"
+              data-dropdown-toggle="dropdown"
               onClick={() => setIsDown(!isDown)}
             >
               Services
@@ -72,17 +73,31 @@ const Navbar = () => {
               </span>
             </Link>
             {isDown && (
-              <div className="absolute bg-white flex flex-col rounded-lg items-start top-14 p-2 w-60 flex-wrap">
+              <div
+                className="absolute bg-white flex flex-col rounded-lg items-start top-14 p-2 w-60 flex-wrap"
+                aria-labelledby="dropdownDefaultButton"
+              >
                 <li className="px-3 py-2 w-full hover:bg-bltzo-150 cursor-pointer rounded-md">
-                  <Link href="/services/web-services">Web Development</Link>
+                  <Link
+                    href="/services/web-services"
+                    className="block px-4 py-1.5"
+                  >
+                    Web Development
+                  </Link>
                 </li>
                 <li className="px-3 py-2 w-full hover:bg-bltzo-150 cursor-pointer rounded-md">
-                  <Link href="/services/product-design-services">
+                  <Link
+                    href="/services/product-design-services"
+                    className="block px-4 py-1.5"
+                  >
                     Product Design
                   </Link>
                 </li>
                 <li className="px-3 py-2 w-full hover:bg-bltzo-150 cursor-pointer rounded-md">
-                  <Link href="/services/quality-services">
+                  <Link
+                    href="/services/quality-services"
+                    className="block px-4 py-1.5"
+                  >
                     Quality Assurance
                   </Link>
                 </li>

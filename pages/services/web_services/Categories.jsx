@@ -18,25 +18,37 @@ const Categories = () => {
       title: "Full Stack Development",
       desc: "We deliver end-to-end web development, combining frontend and backend solutions and other technologies necessary to make your product a success",
     },
+    {
+      icon: "../assets/img/services/fullstack.svg",
+      title: "Full Stack Development",
+      desc: "We deliver end-to-end web development, combining frontend and backend solutions and other technologies necessary to make your product a success",
+    },
+    {
+      icon: "../assets/img/services/fullstack.svg",
+      title: "Full Stack Development",
+      desc: "We deliver end-to-end web development, combining frontend and backend solutions and other technologies necessary to make your product a success",
+    },
   ];
   return (
-    <div className="h-screen bg-sectionbg p-28">
-      <div className="grid gap-28">
+    <div className="h-screen bg-bltzo-950 mt-44 py-20 px-32 rounded-xl">
+      <div className="grid gap-24 ">
         <div className="flex flex-col gap-3 items-center justify-center text-center">
-          <h2 className="text-headers font-normal text-lg">
-            WEB DEVELOPMENT TECHNOLOGIES
-          </h2>
-          <h1 className="font-bold text-4xl text-black">
-            Which technologies will bring maximum value to your business?
-          </h1>
+          <div className="flex flex-col gap-1">
+            <h2 className="text-bltzo-400 font-normal text-sm">
+              WEB DEVELOPMENT TECHNOLOGIES
+            </h2>
+            <h1 className="font-bold text-3xl text-black">
+              Which technologies will bring maximum value to your business?
+            </h1>
+          </div>
           <p className="font-normal text-txtparagraph">
             Solve customer problems by choosing cutting-edge technologies for
             your tech stack. Take your business to the next level with the right
             solutions tailored to your own requirements.
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-20 flex-1">
-          <div className="flex flex-col gap-16">
+        <div className="grid grid-cols-2 gap-24 flex-1">
+          <div className="flex flex-col gap-16 overflow-y-auto max-h-[500px] scroll-smooth">
             {categories.map((cat, idx) => (
               <div
                 className={clsx(
