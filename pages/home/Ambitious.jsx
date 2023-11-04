@@ -14,7 +14,7 @@ const Ambitious = () => {
           <br />
           industry. Lorem Ipsum has been the industry's standard
         </p>
-        <div className="flex justify-center items-center gap-5">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-5">
           <KnowMoreBtn className="">Contact Us</KnowMoreBtn>
           <button className="px-8 py-3 bg-white text-bltzo-400 rounded-lg">
             About Us

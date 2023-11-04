@@ -3,8 +3,8 @@ import KnowMoreBtn from "../shared/KnowMoreBtn";
 
 const Advantages = () => {
   return (
-    <div className="container mx-auto mt-36">
-      <div className="grid grid-cols-2 gap-28">
+    <div className="container mx-auto mt-20 md:mt-36">
+      <div className="grid md:grid-cols-2 gap-10 md:gap-28">
         <div className="bg-bltzo-900 rounded-tr-md rounded-br-md relative">
           <div className="absolute h-full w-full flex top-0">
             <img
@@ -20,7 +20,7 @@ const Advantages = () => {
             WHY BLTZO? OUR ADVANTAGES
           </h3>
           <h1 className="text-bltzo-200 text-3xl font-bold font-[Poppins]">
-            It's time to
+            Its time to
             <span className="text-bltzo-400"> make your</span> <br />
             <span className="text-bltzo-400">software</span> online now!
           </h1>
